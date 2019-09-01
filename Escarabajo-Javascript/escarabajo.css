@@ -1,0 +1,54 @@
+/* CSS Old Timey Terminal Styling */
+/* Fuente: https://css-tricks.com/old-timey-terminal-styling/ */
+
+body {
+    background-color: black;
+    background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    padding: 2rem;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #c8c8c8;
+    margin: 0px;
+    padding: 0px;  
+  }
+  body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+    pointer-events: none;
+  }
+  ::selection {
+    background: #0080ff;
+    text-shadow: none;
+  }
+  pre {
+    margin: 0;
+  }
+ 
+  /* Mis modificaciones */
+
+  a {
+    color: rgb(255, 217, 0);
+  } 
+
+  #FractalCanvas {
+    z-index: 1;
+    position:absolute;      
+    left: 0px;
+    top: 0px;
+
+  }
+  #ControlCanvas {
+    background-color: transparent;
+    z-index: 2;
+    position:relative; 
+    left: 0px;
+    top: 0px;     
+  }
