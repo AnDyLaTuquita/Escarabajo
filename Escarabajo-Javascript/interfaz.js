@@ -118,7 +118,7 @@ function GraficarFractal( bMostrarInstrucciones) {
         println("...A continuación se graficará en una nueva ventana el fractal del 'Escarabajo de Mandelbrot'");
         println("El Escarabajo es una imagen de zoom teoricamente 'infinito', ¡te atreves a encontrar los límites!...<br>");
         println("1. Use click izquierdo para acercar y click derecho para alejar el zoom<br>");
-        println("2. Presione el BOTÓN para culminar y guardar su imagen actual en fractales favoritos<br>");
+        println("2. Presione la tecla ENTER, ESC o el BOTÓN Guardar para culminar y guardar su imagen actual en fractales favoritos<br>");
 
         
 
@@ -147,6 +147,9 @@ function GraficarFractal2( dXmin, dXmax, dYmin, dYmax )
 }
 
 function GraficarFractal_Display(){
+
+    cls();//limpia la pantalla
+
     Display();    
 }
 
